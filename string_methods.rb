@@ -66,6 +66,25 @@
 # "rubyguides".each_char { |i| puts i }
 
 #count method : to count the occurences of a letter
-str="hello"
-puts str.count("l")
+# str="hello"
+# puts str.count("l")
+
+# empty? method : check whether the string is empty or not
+# str=""
+# puts str.empty?
+
+# we can access a string character using square brackets
+str="   hello Arjun   "
+str2="hello arjun"
+# puts str[0..-2]
+# puts str.include?("Arjun")
+# puts str.index("hello") #return index of a item
+# puts str.casecmp?(str2) #compare two string
+# puts str.gsub("Arjun","satyam") #gsub  method : to replace a text in a string
+# puts str.delete!("l")
+
+# puts str.strip #removes the whitespaces from the string
+# p str.lstrip!
+
+
 

@@ -32,10 +32,20 @@
 # }
 
 #BEGIN and END Block
-BEGIN{
-    puts("This is BEGIN block")
-}
-END{
-    puts("This is END block")
-}
-puts"This is main block"
+# BEGIN{
+#     puts("This is BEGIN block")
+# }
+# END{
+#     puts("This is END block")
+# }
+# puts"This is main block"
+
+#----Explicit block----#
+# def explicit_block(&block)
+#     block.call #same as yield
+# end
+# explicit_block{
+#     puts "Explicit block called"
+# }
+
+
