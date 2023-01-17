@@ -1,3 +1,6 @@
+#include means calling a module's method with object name
+#extend means calling a module's method with classname
+
 # module Test1
 #  def msg1
 #     puts("We are in msg1 of module Test1")
@@ -27,23 +30,6 @@
 # obj.msg1
 # obj.txt2
 
-module Apple
-    def print
-        puts("Hi i am from module apple")
-    end
-end
-module Mango
-   def print
-       puts("hi i am from module mango")
-   end
-end
-class LORD
-    include Apple
-    extend Mango
-end
-obj=LORD.new
-LORD.print
-obj.print
 
 
 # x="hello"

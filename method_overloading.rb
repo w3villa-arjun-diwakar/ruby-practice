@@ -1,3 +1,4 @@
+#Ruby does not support method overloading
 class Test
     def add(x,y)    
         c=x+y
@@ -10,4 +11,5 @@ class Test
 end
 
 obj=Test.new
-obj.add(4,7,6)
+obj.add(4,7) #throws error 
+

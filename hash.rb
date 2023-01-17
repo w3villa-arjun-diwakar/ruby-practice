@@ -18,3 +18,15 @@ fruits1 = {1=>"banana",2=>"apple",3=>"orange"}
 # puts fruits1.keys
 # puts fruits1.values
 
+hash1 = Hash.new
+# hash1[1]=:Arjun
+# hash1[2]=:satyam
+hash1[:Arjun]="one"
+hash1[:satyam]="two"
+p hash1
+
+# hash2 = {1=>:arjun,2 =>:satyam}
+# hash2 = { "one"=>1,"two"=>2}
+# hash2 = {1=>"arjun",2=>"satyam"} 
+hash2 = {:arjun=>"one",:two=>"satyam"} 
+# p hash2

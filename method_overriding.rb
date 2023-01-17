@@ -1,3 +1,4 @@
+#ruby supports method overriding
 class Parent
    def parent_method
     puts "I am Parent method"

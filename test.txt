@@ -1,0 +1,2 @@
+this a simple text file for testing purpose.
+I am another text

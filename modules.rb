@@ -11,19 +11,35 @@
 #    end
 # end
 
+# extend Message
+# sayhi("Arjun")  
+# saybye("Satyam") 
+
+# module Message
+#    def sayhi(name)
+#     # puts("Hello #{name}!")
+#     puts"hello " + name
+#    end
+#    def saybye(name)
+#     puts("Goodbye #{name}!")
+#    end
+# end
 # include Message
 # Message.sayhi("Arjun")  
 # Message.saybye("Satyam") 
 
-# module Message
-#    def Message.sayhi(name)
-#     # puts("Hello #{name}!")
-#     puts"hello " + name
-#    end
-#    def Message.saybye(name)
-#     puts("Goodbye #{name}!")
-#    end
-# end
+module Foo
+    def fun
+        puts "Inside the module"
+    end 
+end
 
-# Message.sayhi("Arjun")  
-# Message.saybye("Satyam") 
+class Bar
+    prepend Foo
+    def fun
+        puts "Inside the class"
+    end 
+end
+
+obj=Bar.new
+obj.fun

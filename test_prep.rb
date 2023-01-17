@@ -15,6 +15,23 @@
 # x=Proc.new{|i,j| puts"I am proc",i,j}
 # x.call("Arjun","Satyam")
 
+#3.----each collect select map -----#
+
+# arr=[1,2,3,4,5,6]
+
+# # arr.each do |i|
+# #     puts i
+# # end
+
+# # arr.collect do |i|  #map is also same
+# #     p x=i*3    
+# # end
+
+# x=arr.select do |i|
+#     i>3
+# end
+# p x
+
 #4.---Mixin-----#
 #Mixins are used to achieve multiple inheritance as ruby does not support multiple inheritance directly.
 
@@ -45,7 +62,7 @@
 
 #5.----Class and Modules---#
 #modules are collection of methods and constants and can be include in any other file whereas class
-#is a collection of objects.
+#is a blueprint related to objects.
 
 # class Sample 
 #     def sayhi(name)
@@ -70,6 +87,47 @@
 # include Message
 # Message.sayhi("arjun")
 # Message.saybye("satyam")
+
+#6.---dup and clone ---#
+#clone
+a = [1,2,3,4,5]
+# p a[1..-1]
+
+#another way
+# b=a.clone
+# b.shift
+# p b
+
+#dup
+b= a.dup
+b.pop
+p b
+
+#7.----include and extend ----#
+# module Mango
+#     def fun
+#         puts "I am mango module"
+#     end
+# end
+
+# module Apple
+#     def fun
+#         puts "I am a apple module"
+#     end
+# end
+# class Load
+#     extend Mango
+#     include Apple
+# end
+
+# # obj=Load.new
+# # Load.fun
+# Load.fun
+# obj.fun
+
+#9.---Acces modifiers ---#
+
+
 
 #10 ---Flatten---#
 # arr=[2,3,[10,4,5,[15,14]]]

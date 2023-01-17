@@ -9,6 +9,17 @@
 #     puts"This is block"
 # }
 
+# Block as parameter/arguement
+# def test(&block)
+#     puts "Hello i am method"
+#     block.call
+# end
+
+# test{
+#     puts " I am block"
+# }
+
+
 #With arguement
 # def test
 #     puts("This is method 1")
