@@ -36,12 +36,12 @@
 # y="hello"
 # p x.object_id
 # p y.object_id
-class Student
-    def Student.fun
-        puts "class Function"
-    end
-end
-Student.fun
+# class Student
+#     def Student.fun
+#         puts "class Function"
+#     end
+# end
+# Student.fun
 
 # module Apple
 #     def fun
@@ -60,9 +60,9 @@ Student.fun
 # Example.fun
 # puts obj.fun
 
-z=%q[a b c d] #converts into string
-z=%i[a b c d] #converts into array of symbol
-z=%w[a b c d] #converts into array of string
+# z=%q[a b c d] #converts into string
+# z=%i[a b c d] #converts into symbols
+# z=%w[a b c d] #converts into array of strings
 z=%s[a b c d] #converts into symbol of string
-# p z
+p z
 

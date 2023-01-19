@@ -30,3 +30,11 @@ p hash1
 # hash2 = {1=>"arjun",2=>"satyam"} 
 hash2 = {:arjun=>"one",:two=>"satyam"} 
 # p hash2
+
+
+=begin
+.with_indifferent_access -- source code
+While diving deeper into ActiveSupport::HashWithIndifferentAccess Class 
+in Rails I discovered how we can use both symbols and strings as keys to 
+access the Hash values thanks to this method.
+=end

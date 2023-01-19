@@ -51,7 +51,7 @@
 # }
 # puts"This is main block"
 
-#----Explicit block----#
+#----Explicit block----# when block passed as an arguement in method is called explicit block.
 # def explicit_block(&block)
 #     block.call #same as yield
 # end
